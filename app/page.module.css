@@ -60,10 +60,3 @@
   text-wrap: pretty;
 }
 
-.footer {
-  padding: var(--space-4) var(--space-2);
-  font-size: 0.8125rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-muted);
-}
