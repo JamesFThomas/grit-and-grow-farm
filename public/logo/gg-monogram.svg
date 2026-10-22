@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Grit and Grow Farm monogram">
+  <rect width="64" height="64" rx="12" fill="#2f4a24" />
+  <g transform="translate(12.16 21.21) scale(0.2663)">
+    <g fill="none" stroke="#faf7f0" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M 21.49 12.31 A 34 34 0 1 1 21.49 68.69 L 6.50 40.50 L 23.50 40.50" />
+      <path d="M 127.51 12.31 A 34 34 0 1 0 127.51 68.69 L 142.50 40.50 L 125.50 40.50" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,33 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  list-style: none;
+}
+
+.link {
+  display: inline-block;
+  padding: var(--space-1) 0;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  color: var(--color-foreground);
+  border-bottom: 1px solid transparent;
+}
+
+.link:hover,
+.link:focus-visible {
+  border-bottom-color: var(--color-accent);
+}
+
+.link[aria-current="page"] {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+@media (min-width: 48em) {
+  .list {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-3);
+  }
+}

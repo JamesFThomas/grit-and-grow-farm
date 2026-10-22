@@ -21,10 +21,6 @@ export default function Home() {
           <p>Grown with natural inputs only.</p>
         </div>
       </div>
-
-      <footer className={styles.footer}>
-        <p>Full site coming soon.</p>
-      </footer>
     </main>
   );
 }

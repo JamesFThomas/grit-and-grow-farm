@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
+import { NavBar } from "@/components/shared/NavBar/NavBar";
+import { Footer } from "@/components/shared/Footer/Footer";
 
 const display = Fraunces({
   variable: "--font-display",
@@ -22,7 +24,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${display.variable} ${body.variable}`}>
-      <body>{children}</body>
+      <body>
+        <NavBar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
