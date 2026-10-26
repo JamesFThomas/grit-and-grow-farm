@@ -53,7 +53,15 @@ describe("NavBar", () => {
     const toggle = screen.getByRole("button", { name: "Menu" });
 
     await userEvent.click(toggle);
-    await userEvent.click(screen.getByRole("link", { name: "About" }));
+
+    // jsdom has no navigation, so following the href logs an unimplemented
+    // error. Routing is Next's concern; this scenario only cares that the
+    // menu collapses, so the default is prevented and the React onClick
+    // still fires.
+    const aboutLink = screen.getByRole("link", { name: "About" });
+    aboutLink.addEventListener("click", (event) => event.preventDefault());
+
+    await userEvent.click(aboutLink);
 
     expect(toggle).toHaveAttribute("aria-expanded", "false");
   });

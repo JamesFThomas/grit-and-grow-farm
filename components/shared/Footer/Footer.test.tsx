@@ -1,5 +1,4 @@
 import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
 import { Footer } from "./Footer";
 
 /*
@@ -18,16 +17,9 @@ describe("Footer", () => {
     render(<Footer />);
 
     expect(screen.getByLabelText("Email")).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: "Sign up" })).toBeInTheDocument();
-  });
-
-  it("acknowledges a signup without losing the page", async () => {
-    render(<Footer />);
-
-    await userEvent.type(screen.getByLabelText("Email"), "james@example.com");
-    await userEvent.click(screen.getByRole("button", { name: "Sign up" }));
-
-    expect(screen.getByRole("status")).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: "Subscribe" })
+    ).toBeInTheDocument();
   });
 
   it("links to Instagram", () => {

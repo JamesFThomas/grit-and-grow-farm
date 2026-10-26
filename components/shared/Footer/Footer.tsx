@@ -1,19 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { FormEvent, useState } from "react";
 import styles from "./Footer.module.css";
+import { SubscriptionForm } from "../SubscriptionForm/SubscriptionForm";
 
-// TODO: replace with the shared SubscriptionForm once it is ported from
-// slimkat-media so signups reach the shared spreadsheet.
 export const Footer = () => {
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setSubmitted(true);
-  };
-
   return (
     <footer className={styles.footer}>
       <div className={styles.inner}>
@@ -35,28 +26,7 @@ export const Footer = () => {
           <p className={styles.note}>
             Hear what is in the ground and when the shop opens.
           </p>
-          {submitted ? (
-            <p className={styles.note} role="status">
-              Signups open soon. Follow along on Instagram in the meantime.
-            </p>
-          ) : (
-            <form className={styles.form} onSubmit={handleSubmit}>
-              <label className={styles.label} htmlFor="newsletter-email">
-                Email
-              </label>
-              <input
-                className={styles.input}
-                id="newsletter-email"
-                name="email"
-                type="email"
-                autoComplete="email"
-                required
-              />
-              <button className={styles.button} type="submit">
-                Sign up
-              </button>
-            </form>
-          )}
+          <SubscriptionForm />
         </section>
 
         <section className={styles.social} aria-labelledby="social-heading">
