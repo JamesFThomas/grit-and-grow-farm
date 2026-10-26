@@ -10,6 +10,8 @@
   --color-muted: #6b6559;
   --color-accent: #4a6b3a;
   --color-rule: #ddd6c7;
+  --color-error: #9c3a26;
+  --color-success: #2f6b3f;
 
   --space-1: 0.5rem;
   --space-2: 1rem;
@@ -27,6 +29,8 @@
     --color-muted: #8d8878;
     --color-accent: #8fb37a;
     --color-rule: #2b2e26;
+    --color-error: #e2917c;
+    --color-success: #8fc79a;
   }
 
   html {
