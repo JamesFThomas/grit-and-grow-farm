@@ -10,6 +10,11 @@ import { SubscriptionConfirmationEmail } from "./SubscriptionConfirmationEmail";
  *   When the template is rendered
  *   Then the image should reference that content id and be labelled with the farm name
  *
+ * Scenario: The lockup carries explicit dimensions
+ *   Given Outlook on Windows renders through Word and handles height:auto poorly
+ *   When the template is rendered
+ *   Then the image should declare its width and height rather than leaving either to the client
+ *
  * Scenario: The newsletter expectation is set
  *   Given the template is rendered
  *   When the body is read
@@ -28,6 +33,14 @@ describe("SubscriptionConfirmationEmail", () => {
 
     expect(html).toContain(`src="cid:${logoContentId}"`);
     expect(html).toContain('alt="Grit and Grow Farm"');
+  });
+
+  it("declares explicit dimensions on the lockup", () => {
+    const html = SubscriptionConfirmationEmail(logoContentId);
+
+    expect(html).toContain('width="200"');
+    expect(html).toContain('height="122"');
+    expect(html).not.toContain("height:auto");
   });
 
   it("sets the expectation of a monthly letter from the farm", () => {

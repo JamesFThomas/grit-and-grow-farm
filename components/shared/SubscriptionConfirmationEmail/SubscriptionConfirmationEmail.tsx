@@ -3,7 +3,9 @@ export const SubscriptionConfirmationEmail = (logoContentId: string) => `
     <img
       src="cid:${logoContentId}"
       alt="Grit and Grow Farm"
-      style="display:block; width:200px; max-width:200px; height:auto; margin: 0 auto 28px auto;"
+      width="200"
+      height="122"
+      style="display:block; width:200px; max-width:200px; height:122px; margin: 0 auto 28px auto;"
     />
 
     <h1 style="font-size: 22px; font-weight: 600; margin: 0 0 16px 0;">
