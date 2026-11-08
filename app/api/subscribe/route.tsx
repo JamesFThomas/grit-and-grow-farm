@@ -122,7 +122,7 @@ export async function POST(request: NextRequest) {
         // Replying in Outlook answers the subscriber rather than the mailbox.
         replyTo: email,
         subject: "New subscriber on gritandgrowfarm.com",
-        html: SubmissionNotificationEmail("New farm subscriber", [
+        html: SubmissionNotificationEmail("New Farm Subscriber", [
           { label: "Email", value: String(email) },
         ]),
       });
