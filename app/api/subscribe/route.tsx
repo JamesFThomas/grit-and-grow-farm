@@ -29,7 +29,7 @@ const logoPath = path.join(
   process.cwd(),
   "public",
   "logo",
-  "gg-lockup-full-name.png",
+  "gg-lockup-full-name-tight.png",
 );
 
 const logoAttachment = fs.readFileSync(logoPath).toString("base64");
@@ -106,7 +106,7 @@ export async function POST(request: NextRequest) {
         attachments: [
           {
             content: logoAttachment,
-            filename: "gg-lockup-full-name.png",
+            filename: "gg-lockup-full-name-tight.png",
             contentId: "gg_lockup",
           },
         ],
