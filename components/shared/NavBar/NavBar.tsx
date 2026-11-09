@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
@@ -14,7 +15,14 @@ export const NavBar = () => {
     <header className={styles.header}>
       <nav className={styles.nav} aria-label="Primary">
         <Link className={styles.brand} href="/">
-          Grit and Grow Farm
+          <Image
+            className={styles.mark}
+            src="/logo/gg-lockup-full-name-tight.png"
+            alt="Grit and Grow Farm"
+            width={640}
+            height={390}
+            priority
+          />
         </Link>
 
         <button

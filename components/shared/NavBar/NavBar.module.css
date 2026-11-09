@@ -16,10 +16,16 @@
 }
 
 .brand {
-  font-family: var(--font-display), Georgia, serif;
-  font-weight: 700;
-  font-size: 1.125rem;
-  letter-spacing: -0.01em;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.mark {
+  display: block;
+  width: 7.5rem;
+  height: auto;
+  border-radius: 6px;
 }
 
 .toggle {
@@ -53,6 +59,10 @@
 }
 
 @media (min-width: 48em) {
+  .mark {
+    width: 8.75rem;
+  }
+
   .toggle {
     display: none;
   }

@@ -11,15 +11,18 @@ export const Footer = () => {
         <div className={styles.brand}>
           <Image
             src="/logo/gg-monogram.svg"
-            alt="Grit and Grow Farm"
+            alt="Grit And Grow Farm"
             width={48}
             height={48}
           />
-          <p className={styles.name}>Grit and Grow Farm</p>
+          <p className={styles.name}>Grit And Grow Farm</p>
           <p className={styles.tagline}>grow it · cook it · share it</p>
         </div>
 
-        <section className={styles.newsletter} aria-labelledby="newsletter-heading">
+        <section
+          className={styles.newsletter}
+          aria-labelledby="newsletter-heading"
+        >
           <h2 id="newsletter-heading" className={styles.heading}>
             Newsletter
           </h2>
