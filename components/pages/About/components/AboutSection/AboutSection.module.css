@@ -1,0 +1,91 @@
+.section {
+  display: grid;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4) 0;
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  max-width: var(--measure);
+  font-size: clamp(1rem, 1.1vw, 1.125rem);
+  line-height: 1.7;
+  color: var(--color-muted);
+  text-wrap: pretty;
+}
+
+.heading {
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--color-foreground);
+}
+
+.frame {
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 10px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.focusHigh {
+  object-position: center 25%;
+}
+
+.focusLow {
+  object-position: center 60%;
+}
+
+.posterFrame {
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+  aspect-ratio: auto;
+  border-radius: 0;
+}
+
+.poster {
+  width: auto;
+  height: auto;
+  max-width: 28rem;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+@media (min-width: 60em) {
+  .section {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: var(--space-5);
+    padding: var(--space-5) 0;
+  }
+
+  .copy {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .frame {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .flip .copy {
+    grid-column: 2;
+  }
+
+  .flip .frame {
+    grid-column: 1;
+  }
+}
