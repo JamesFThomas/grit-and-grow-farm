@@ -10,7 +10,7 @@ describe("Footer", () => {
   it("shows the farm logo", () => {
     render(<Footer />);
 
-    expect(screen.getByAltText("Grit and Grow Farm")).toBeInTheDocument();
+    expect(screen.getByAltText("Grit And Grow Farm")).toBeInTheDocument();
   });
 
   it("offers a newsletter signup", () => {
@@ -18,7 +18,7 @@ describe("Footer", () => {
 
     expect(screen.getByLabelText("Email")).toBeInTheDocument();
     expect(
-      screen.getByRole("button", { name: "Subscribe" })
+      screen.getByRole("button", { name: "Subscribe" }),
     ).toBeInTheDocument();
   });
 
@@ -27,7 +27,7 @@ describe("Footer", () => {
 
     expect(screen.getByRole("link", { name: "Instagram" })).toHaveAttribute(
       "href",
-      "https://www.instagram.com/gritandgrowfarm/"
+      "https://www.instagram.com/gritandgrowfarm/",
     );
   });
 

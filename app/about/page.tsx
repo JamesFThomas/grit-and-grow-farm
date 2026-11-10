@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { PagePlaceholder } from "@/components/shared/PagePlaceholder/PagePlaceholder";
+import { AboutPage } from "@/components/pages/About/AboutPage";
 
 export const metadata: Metadata = {
   title: "About | Grit and Grow Farm",
@@ -8,17 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function About() {
-  return (
-    <PagePlaceholder
-      title="About"
-      intro="How a backyard garden turned into a production farm in Byram, Mississippi."
-      sections={[
-        "Our story and history",
-        "Kayla and Farming Freedom",
-        "The land and the farm layout",
-        "Where the farm is headed",
-        "Mission, values, and what we will not do",
-      ]}
-    />
-  );
+  return <AboutPage />;
 }
