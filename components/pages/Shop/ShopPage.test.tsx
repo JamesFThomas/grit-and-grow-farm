@@ -5,7 +5,8 @@ import { ShopPage } from "./ShopPage";
  * Given a visitor looking for something to buy before the farm has produce
  * When the Shop page renders
  * Then it says plainly that the shop is closed, explains what a Big Pot Box
- *      is, and points at the ways to hear when the boxes open
+ *      is, and points at the newsletter and the YouTube series as the ways to
+ *      hear when the boxes open
  */
 describe("ShopPage", () => {
   it("titles the page", () => {
@@ -38,5 +39,5 @@ describe("ShopPage", () => {
     ).toHaveAttribute("href", "https://www.youtube.com/@gritandgrowfarm");
   });
 
-  it.todo("links out to the farm blog once it is live");
+  it.todo("links out to the newsletter archive once the publication is live");
 });

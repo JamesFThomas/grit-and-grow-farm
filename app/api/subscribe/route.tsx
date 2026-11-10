@@ -2,6 +2,7 @@ import { SubscriptionConfirmationEmail } from "@/components/shared/SubscriptionC
 import { SubmissionNotificationEmail } from "@/components/shared/SubmissionNotificationEmail/SubmissionNotificationEmail";
 import { notificationRecipients } from "@/lib/email/client";
 import { sendSubmissionEmails, type SubmissionEmail } from "@/lib/email/send";
+import { addSubscriberToBeehiiv } from "@/lib/newsletter/beehiiv";
 import {
   isHoneypotFilled,
   isSameOrigin,
@@ -135,7 +136,16 @@ export async function POST(request: NextRequest) {
       return successResponse("Subscription successful");
     }
 
-    // 11) The row is recorded, so now send the email raised by it. Sending
+    // 11) On the list before the confirmation goes out. Every guard above
+    //     has already turned away scripted posts, filled honeypots and
+    //     addresses already on the sheet, so beehiiv only ever sees one
+    //     that cleared them all and wrote a new row. Awaited rather than
+    //     left running, since the route must not outlive its response. The
+    //     call never throws and a false result changes nothing here: the
+    //     address is in the spreadsheet either way, and it is logged for us.
+    await addSubscriberToBeehiiv(String(email));
+
+    // 12) The row is recorded, so now send the email raised by it. Sending
     //    happens here rather than from the browser, so there is no public
     //    endpoint that will send mail to an arbitrary address on request.
     const emails: SubmissionEmail[] = [

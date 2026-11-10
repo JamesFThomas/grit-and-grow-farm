@@ -4,8 +4,9 @@ import { GrowingPage } from "./GrowingPage";
 /*
  * Given a visitor who wants to know how the farm grows and where it is headed
  * When the Growing page renders
- * Then the layout plan leads the page, the three sections follow it, and the
- *      outside links point at JADAM and the YouTube series
+ * Then the layout plan leads the page, the three sections follow it, the
+ *      outside links point at JADAM and the YouTube series, and the writing
+ *      is named as the newsletter rather than a separate blog
  */
 describe("GrowingPage", () => {
   it("titles the page", () => {
@@ -52,5 +53,11 @@ describe("GrowingPage", () => {
     ).toHaveAttribute("href", "https://www.youtube.com/@gritandgrowfarm");
   });
 
-  it.todo("links out to the farm blog once it is live");
+  it("names the newsletter as where the farm writing goes", () => {
+    render(<GrowingPage />);
+
+    expect(screen.getByText(/goes out as our newsletter/i)).toBeInTheDocument();
+  });
+
+  it.todo("links out to the newsletter archive once the publication is live");
 });
