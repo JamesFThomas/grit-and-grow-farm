@@ -38,12 +38,14 @@
 
 .note {
   margin-top: var(--space-1);
+  /* The signup's own Email label sits directly beneath, so the note needs
+     to let go of it rather than read as part of the same block. */
+  margin-bottom: var(--space-2);
   max-width: var(--measure);
   font-size: 0.875rem;
   line-height: 1.6;
   color: var(--color-muted);
 }
-
 
 .socialList {
   margin-top: var(--space-2);
