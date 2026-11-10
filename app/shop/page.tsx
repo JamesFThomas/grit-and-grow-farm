@@ -1,23 +1,12 @@
 import type { Metadata } from "next";
-import { PagePlaceholder } from "@/components/shared/PagePlaceholder/PagePlaceholder";
+import { ShopPage } from "@/components/pages/Shop/ShopPage";
 
 export const metadata: Metadata = {
   title: "Shop | Grit And Grow Farm",
   description:
-    "The Grit And Grow Farm shop is not open yet. Here is what will be on it and how buying will work.",
+    "The Grit And Grow Farm shop is not open yet. Big Pot Boxes pair our vegetables and spices with the recipes to cook them.",
 };
 
 export default function Shop() {
-  return (
-    <PagePlaceholder
-      title="Shop"
-      intro="The shop is not open yet. Nothing is in the ground, so nothing is for sale."
-      sections={[
-        "What we will sell",
-        "How buying will work",
-        "Delivery, farm stand, and shipping",
-        "Hear first when the shop opens",
-      ]}
-    />
-  );
+  return <ShopPage />;
 }
