@@ -32,7 +32,7 @@ describe("SubscriptionConfirmationEmail", () => {
     const html = SubscriptionConfirmationEmail(logoContentId);
 
     expect(html).toContain(`src="cid:${logoContentId}"`);
-    expect(html).toContain('alt="Grit and Grow Farm"');
+    expect(html).toContain('alt="Grit And Grow Farm"');
   });
 
   it("declares explicit dimensions on the lockup", () => {

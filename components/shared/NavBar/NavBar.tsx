@@ -18,7 +18,7 @@ export const NavBar = () => {
           <Image
             className={styles.mark}
             src="/logo/gg-lockup-full-name-tight.png"
-            alt="Grit and Grow Farm"
+            alt="Grit And Grow Farm"
             width={640}
             height={390}
             priority

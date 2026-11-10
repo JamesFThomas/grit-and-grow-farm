@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { PagePlaceholder } from "@/components/shared/PagePlaceholder/PagePlaceholder";
 
 export const metadata: Metadata = {
-  title: "Shop | Grit and Grow Farm",
+  title: "Shop | Grit And Grow Farm",
   description:
-    "The Grit and Grow Farm shop is not open yet. Here is what will be on it and how buying will work.",
+    "The Grit And Grow Farm shop is not open yet. Here is what will be on it and how buying will work.",
 };
 
 export default function Shop() {
