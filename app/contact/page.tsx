@@ -1,22 +1,12 @@
 import type { Metadata } from "next";
-import { PagePlaceholder } from "@/components/shared/PagePlaceholder/PagePlaceholder";
+import { ContactPage } from "@/components/pages/Contact/ContactPage";
 
 export const metadata: Metadata = {
   title: "Contact | Grit And Grow Farm",
   description:
-    "Reach Grit And Grow Farm by email, or follow along on social while the first season gets underway.",
+    "Send a message to Grit And Grow Farm in Byram, Mississippi, about delivery, wholesale, classes and events, or anything else.",
 };
 
 export default function Contact() {
-  return (
-    <PagePlaceholder
-      title="Contact"
-      intro="The best way to follow the farm right now is on social. More ways to reach us open up once crops are in the ground."
-      sections={[
-        "Email us",
-        "Follow on Instagram and YouTube",
-        "Delivery and wholesale inquiries, once we are growing",
-      ]}
-    />
-  );
+  return <ContactPage />;
 }
