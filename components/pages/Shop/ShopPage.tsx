@@ -1,8 +1,6 @@
 import { PageHeader } from "@/components/shared/PageHeader/PageHeader";
+import { YOUTUBE_URL } from "@/lib/links/externalLinks";
 import styles from "./ShopPage.module.css";
-
-const YOUTUBE_URL = "https://www.youtube.com/@gritandgrowfarm";
-// TODO: add the farm blog link here once the blog is live.
 
 export const ShopPage = () => (
   <main className={styles.main}>
@@ -29,8 +27,9 @@ export const ShopPage = () => (
       <section className={styles.section}>
         <h2 className={styles.heading}>Hear first when the boxes open</h2>
         <p>
-          Nothing is for sale just yet. You can sign up at the bottom of this
-          page for our newsletter. It will be the best way to know when the
+          Nothing is for sale just yet. Our newsletter is where we write about
+          the farm, and every post goes out to the people signed up for it, so
+          the form at the bottom of this page is the best way to know when the
           first boxes are ready.
         </p>
         <p>
@@ -43,8 +42,7 @@ export const ShopPage = () => (
           >
             This Week on the Farm
           </a>{" "}
-          on YouTube. The farm blog is on its way, and the link lands here once
-          it is live.
+          on YouTube.
         </p>
       </section>
     </div>

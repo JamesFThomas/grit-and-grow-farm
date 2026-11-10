@@ -1,10 +1,7 @@
 import { PageHeader } from "@/components/shared/PageHeader/PageHeader";
+import { JADAM_URL, YOUTUBE_URL } from "@/lib/links/externalLinks";
 import { FarmPlan } from "./components/FarmPlan/FarmPlan";
 import styles from "./GrowingPage.module.css";
-
-const JADAM_URL = "https://en.jadam.kr/";
-const YOUTUBE_URL = "https://www.youtube.com/@gritandgrowfarm";
-// TODO: swap in the real blog address once the blog is live.
 
 export const GrowingPage = () => (
   <main className={styles.main}>
@@ -91,8 +88,9 @@ export const GrowingPage = () => (
           >
             This Week on the Farm
           </a>{" "}
-          on YouTube. The farm blog is on its way, and the link lands here once
-          it is live.
+          on YouTube. Everything I write about the farm goes out as our
+          newsletter, so the sign up at the bottom of this page is how you read
+          it.
         </p>
       </section>
     </div>

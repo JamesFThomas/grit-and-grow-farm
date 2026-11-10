@@ -28,7 +28,7 @@ export const Footer = () => {
             Newsletter
           </h2>
           <p className={styles.note}>
-            Hear what is in the ground and when the shop opens.
+            Notes from the field and word when the shop opens.
           </p>
           <SubscriptionForm />
         </section>
