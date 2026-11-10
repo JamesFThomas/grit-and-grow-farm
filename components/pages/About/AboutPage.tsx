@@ -1,3 +1,4 @@
+import { PageHeader } from "@/components/shared/PageHeader/PageHeader";
 import { AboutSection } from "./components/AboutSection/AboutSection";
 import styles from "./AboutPage.module.css";
 
@@ -9,13 +10,10 @@ const nonNegotiables = [
 
 export const AboutPage = () => (
   <main className={styles.main}>
-    <header className={styles.intro}>
-      <h1 className={styles.title}>About</h1>
-      <p className={styles.lede}>
-        How I scaled my backyard garden into a small production farm with my
-        wife in Byram, Mississippi.
-      </p>
-    </header>
+    <PageHeader
+      title="About"
+      lede="How I scaled my backyard garden into a small production farm with my wife in Byram, Mississippi."
+    />
 
     <AboutSection
       heading="Our story"
