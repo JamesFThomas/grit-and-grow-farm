@@ -1,0 +1,25 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.light,
+.dark {
+  display: block;
+  width: auto;
+  height: 1.5rem;
+}
+
+.dark {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .light {
+    display: none;
+  }
+
+  .dark {
+    display: block;
+  }
+}

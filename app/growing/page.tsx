@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { PagePlaceholder } from "@/components/shared/PagePlaceholder/PagePlaceholder";
+import { GrowingPage } from "@/components/pages/Growing/GrowingPage";
 
 export const metadata: Metadata = {
   title: "Growing | Grit And Grow Farm",
@@ -8,17 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function Growing() {
-  return (
-    <PagePlaceholder
-      title="Growing"
-      intro="Heirloom vegetables and herbs grown in staggered waves on a small footprint, with natural inputs only."
-      sections={[
-        "This season's crops and varieties",
-        "How we grow",
-        "Where to find our produce",
-        "What we are adding over the next five to ten years",
-        "The rhythm of the season",
-      ]}
-    />
-  );
+  return <GrowingPage />;
 }

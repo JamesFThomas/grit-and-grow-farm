@@ -1,0 +1,102 @@
+.plan {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+.boundary {
+  fill: none;
+  stroke: var(--color-foreground);
+  stroke-width: 2.5;
+}
+
+.road {
+  fill: var(--color-rule);
+  opacity: 0.7;
+}
+
+.inner {
+  fill: none;
+  stroke: var(--color-foreground);
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+  opacity: 0.45;
+}
+
+.built {
+  fill: var(--color-accent);
+  fill-opacity: 0.24;
+  stroke: var(--color-foreground);
+  stroke-width: 1.4;
+}
+
+.planned {
+  fill: none;
+  stroke: var(--color-muted);
+  stroke-width: 1.1;
+  stroke-dasharray: 5 4;
+}
+
+.hiveBuilt {
+  fill: var(--color-accent);
+  fill-opacity: 0.24;
+  stroke: var(--color-foreground);
+  stroke-width: 1.2;
+}
+
+.hivePlanned {
+  fill: none;
+  stroke: var(--color-muted);
+  stroke-width: 1.1;
+  stroke-dasharray: 3 2;
+}
+
+.title {
+  fill: var(--color-foreground);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.builtLabel {
+  fill: var(--color-foreground);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.plannedLabel {
+  fill: var(--color-muted);
+  font-size: 12px;
+}
+
+.label {
+  fill: var(--color-muted);
+  font-size: 11px;
+}
+
+.small {
+  fill: var(--color-muted);
+  font-size: 9px;
+  opacity: 0.8;
+}
+
+.compassLine {
+  stroke: var(--color-muted);
+  stroke-width: 1;
+  opacity: 0.6;
+}
+
+.compassArrow {
+  fill: var(--color-foreground);
+}
+
+.compassLabel {
+  fill: var(--color-foreground);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.compassMinor {
+  fill: var(--color-muted);
+  font-size: 10px;
+}

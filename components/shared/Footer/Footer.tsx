@@ -3,6 +3,7 @@
 import Image from "next/image";
 import styles from "./Footer.module.css";
 import { SubscriptionForm } from "../SubscriptionForm/SubscriptionForm";
+import { SocialLink } from "./components/SocialLink/SocialLink";
 
 export const Footer = () => {
   return (
@@ -38,16 +39,25 @@ export const Footer = () => {
           </h2>
           <ul className={styles.socialList}>
             <li>
-              <a
-                className={styles.socialLink}
+              <SocialLink
+                name="Instagram"
                 href="https://www.instagram.com/gritandgrowfarm/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Instagram
-              </a>
+                lightSrc="/logo/instagram-glyph-black.svg"
+                darkSrc="/logo/instagram-glyph-white.svg"
+                width={1000}
+                height={1000}
+              />
             </li>
-            {/* TODO: add the YouTube channel link once the channel is live. */}
+            <li>
+              <SocialLink
+                name="YouTube"
+                href="https://www.youtube.com/@gritandgrowfarm"
+                lightSrc="/logo/youtube-icon-almostblack.png"
+                darkSrc="/logo/youtube-icon-white.png"
+                width={827}
+                height={579}
+              />
+            </li>
           </ul>
         </section>
       </div>

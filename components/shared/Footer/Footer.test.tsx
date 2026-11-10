@@ -31,5 +31,12 @@ describe("Footer", () => {
     );
   });
 
-  it.todo("links to YouTube once the channel is live");
+  it("links to YouTube", () => {
+    render(<Footer />);
+
+    expect(screen.getByRole("link", { name: "YouTube" })).toHaveAttribute(
+      "href",
+      "https://www.youtube.com/@gritandgrowfarm",
+    );
+  });
 });
