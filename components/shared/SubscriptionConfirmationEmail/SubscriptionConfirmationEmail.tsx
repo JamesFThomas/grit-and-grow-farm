@@ -2,7 +2,7 @@ export const SubscriptionConfirmationEmail = (logoContentId: string) => `
   <div style="font-family: Arial, sans-serif; line-height: 1.6; max-width: 600px; margin: 0 auto; color: #1f2419;">
     <img
       src="cid:${logoContentId}"
-      alt="Grit and Grow Farm"
+      alt="Grit And Grow Farm"
       width="200"
       height="122"
       style="display:block; width:200px; max-width:200px; height:122px; margin: 0 auto 28px auto;"
@@ -34,7 +34,7 @@ export const SubscriptionConfirmationEmail = (logoContentId: string) => `
     <p style="margin:0;">
       See you at the table,<br />
       <strong>James and Kayla Thomas</strong><br />
-      <span style="color:#6b6559;">Grit and Grow Farm &middot; Byram, Mississippi</span>
+      <span style="color:#6b6559;">Grit And Grow Farm &middot; Byram, Mississippi</span>
     </p>
   </div>
 `;

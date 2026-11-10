@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { PagePlaceholder } from "@/components/shared/PagePlaceholder/PagePlaceholder";
 
 export const metadata: Metadata = {
-  title: "Contact | Grit and Grow Farm",
+  title: "Contact | Grit And Grow Farm",
   description:
-    "Reach Grit and Grow Farm by email, or follow along on social while the first season gets underway.",
+    "Reach Grit And Grow Farm by email, or follow along on social while the first season gets underway.",
 };
 
 export default function Contact() {

@@ -53,7 +53,7 @@ export const Footer = () => {
       </div>
 
       <p className={styles.copyright}>
-        © {new Date().getFullYear()} Grit and Grow Farm
+        © {new Date().getFullYear()} Grit And Grow Farm
       </p>
     </footer>
   );

@@ -16,7 +16,7 @@ const body = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Grit and Grow Farm",
+  title: "Grit And Grow Farm",
   description:
     "A small family farm in Byram, Mississippi growing heirloom vegetables, herbs, honey, and mushrooms naturally.",
 };

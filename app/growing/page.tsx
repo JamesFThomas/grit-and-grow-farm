@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { PagePlaceholder } from "@/components/shared/PagePlaceholder/PagePlaceholder";
 
 export const metadata: Metadata = {
-  title: "Growing | Grit and Grow Farm",
+  title: "Growing | Grit And Grow Farm",
   description:
     "What we grow, how we grow it, where to find it, and what is coming to the fields next.",
 };

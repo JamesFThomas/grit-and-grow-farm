@@ -28,7 +28,7 @@ const submissionType = "farm_subscription";
 const googleSheetsEndpoint =
   "https://script.google.com/macros/s/AKfycbxMKuWhC3PoJjj1t00WmwRaBy3K-a37eDx6x1D3gmCYdNEvDcBRBr1Dp1RYc8Z_yvoDCg/exec";
 
-const sender = "Grit and Grow Farm <no-reply@gritandgrowfarm.com>";
+const sender = "Grit And Grow Farm <no-reply@gritandgrowfarm.com>";
 
 // Attached and referenced by content id rather than by URL, so the lockup
 // always renders even in clients that block remote images.
@@ -142,7 +142,7 @@ export async function POST(request: NextRequest) {
       {
         from: sender,
         to: email,
-        subject: "Grit and Grow Farm: you're subscribed",
+        subject: "Grit And Grow Farm: you're subscribed",
         html: SubscriptionConfirmationEmail("gg_lockup"),
         attachments: [
           {
