@@ -46,8 +46,8 @@ export const AboutPage = () => (
     <AboutSection
       flip
       image={{
-        src: "/images/kayla-collards.jpg",
-        alt: "Kayla holding an armful of freshly cut collard greens.",
+        src: "/images/kayla-hiking.jpg",
+        alt: "Kayla resting on a trail bench in a sun hat and hiking boots, pack beside her.",
         width: 1050,
         height: 1400,
         focus: "high",
