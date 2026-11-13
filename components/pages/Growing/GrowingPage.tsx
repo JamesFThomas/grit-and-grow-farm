@@ -18,14 +18,17 @@ export const GrowingPage = () => (
       <section className={styles.section}>
         <h2 className={styles.heading}>Farm breakdown</h2>
         <p>
-          We currently have two field plots, W1 and W2, prepped at roughly 30
-          by 115 feet each, giving me around 6,900 square feet of growing space
-          for year one. During bed prep we ended up with 14 beds, each 30
-          inches by 100 feet, separated by walkways of 18 to 21 inches. Nothing
-          is perfect in farming, not even the rows. My garden plot is now 30 by
-          50 feet with 19 raised and in ground growing sites of several sizes.
-          I will keep growing my family’s food in the garden, while the field
-          is where I grow for everyone else.
+          In the field, we currently have two plots, W1 and W2, prepped at
+          roughly 30 by 115 feet each, giving me around 6,900 square feet of
+          growing space for year one. During bed prep we ended up with 14 beds,
+          each 30 inches by 100 feet, separated by walkways of 18 to 21 inches.
+          Nothing is perfect in farming, not even the rows.
+        </p>
+        <p>
+          My garden lot is now 30 by 50 feet with a mix of 19 raised as well as
+          in-ground growing sites of several sizes. The garden is where I
+          started my farming journey but while I grow food for others in the
+          field I will continue to grow my family’s food in the garden.
         </p>
         <p>
           My goal is to prep new plots each year until we have expanded our
@@ -48,12 +51,11 @@ export const GrowingPage = () => (
           every fertilizer and pesticide the farm uses myself.
         </p>
         <p>
-          JADAM (Jayeoneul Dalmeun Saramdeul, or “people who resemble nature”) is
-          an
-          ultra low cost, open source organic farming system developed in South
-          Korea by Dr. Youngsang Cho. The open source principle lined up with
-          my software background, and the focus on natural inputs was the piece
-          I had found missing from the so called organic methods I had
+          JADAM (Jayeoneul Dalmeun Saramdeul, or “people who resemble nature”)
+          is an ultra low cost, open source organic farming system developed in
+          South Korea by Dr. Youngsang Cho. The open source principle lined up
+          with my software background, and the focus on natural inputs was the
+          piece I had found missing from the so called organic methods I had
           encountered before. More on the method at{" "}
           <a
             className={styles.link}
